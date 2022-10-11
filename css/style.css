@@ -1,0 +1,492 @@
+* {
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  font-size: 16px;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 0.2rem rgb(46 202 139 / 25%);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* header */
+.top-header {
+  background-color: #0d369f;
+  padding: 15px;
+}
+
+.top-header .top-header-list li,
+.top-header .top-header-list2 li {
+  display: inline-block;
+  margin-right: 2em;
+  margin-top: 5px;
+}
+
+.top-header .top-header-list li,
+.top-header .top-header-list a,
+.top-header .top-header-list2 li,
+.top-header .top-header-list2 a {
+  color: white;
+}
+
+.navbarStudios a {
+  color: #0d369f;
+}
+
+.navbarStudios:hover a {
+  color: #ff6e65;
+  transition: all 0.5s;
+}
+
+.navbarStudios .navbar-brand p,
+.navbarStudios .navbar-brand i {
+  font-size: 36px;
+}
+
+#navbarNavStudiosDropdown .nav-link,
+#navbarNavStudiosDropdown .dropdown-item {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#navbarNavStudiosDropdown .nav-item {
+  margin: 0 15px;
+}
+
+#navbarNavStudiosDropdown .nav-item:hover .nav-link,
+#navbarNavStudiosDropdown .dropdown-item:hover,
+.top-header-list2 a:hover,
+.top-header-list a:hover {
+  color: #ff6e65;
+  transition: all 0.5s;
+}
+
+#navbarNavStudiosDropdown .nav-item.active p {
+  color: #ff6e65;
+}
+
+.navbarStudios form.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.navbarStudios form.search-box input {
+  font-size: 15px;
+  color: #060606;
+  background: transparent;
+  padding: 10px 35px 10px 14px;
+  width: 100%;
+  border-radius: 30px;
+  border: 2px solid #eee;
+}
+
+.navbarStudios .search-btn {
+  position: absolute;
+  color: #0d369f;
+  right: 0;
+  padding: 8px 12px 8px 2px;
+}
+
+.cont-ser-position .theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.cont-ser-position .theme-switch {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+}
+
+.cont-ser-position .theme-switch input {
+  display: none;
+}
+
+.cont-ser-position .theme-switch .mode-container {
+  width: 24px;
+  height: 24px;
+  padding: 0px 0;
+  margin-left: 10px;
+  color: #0d369f;
+}
+
+.cont-ser-position .theme-switch .mode-container i.fa-moon,
+.cont-ser-position .theme-switch .mode-container i.fa-sun {
+  display: block;
+  cursor: pointer;
+}
+
+.cont-ser-position .theme-switch .mode-container i.fa-sun,
+.cont-ser-position .theme-switch .mode-container i.fa-sun::after,
+.cont-ser-position .theme-switch .mode-container i.fa-sun::before {
+  box-sizing: border-box;
+  display: block;
+  width: 24px;
+}
+
+.cont-ser-position .theme-switch .mode-container i.fa-sun::after,
+.cont-ser-position .theme-switch .mode-container i.fa-sun::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  left: -6px;
+  top: 5px;
+}
+
+.cont-ser-position .theme-switch .mode-container i.fa-sun::before {
+  transform: rotate(-45deg);
+}
+
+/* carousel */
+.carousel .banner1 {
+  background-image: url(../img/banner2.jpg);
+}
+
+.carousel .banner2 {
+  background-image: url(../img/banner3.jpg);
+}
+
+.carousel .banner1,
+.carousel .banner2 {
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 90vh;
+  z-index: 9;
+}
+
+.owl-item:before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    75deg,
+    rgb(16 16 16 / 34%) 10%,
+    rgb(230 2 100 / 0%)
+  );
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  z-index: -5;
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+  transform: rotate(90deg);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  background: #ffffff;
+  display: block;
+  border-radius: 50%;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #ff6e65;
+}
+
+.carousel .owl-item .carousel-text {
+  margin: 160px 0px;
+}
+
+.carousel .carousel-text h1 {
+  max-width: 600px;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 50px;
+}
+
+.btnstyle {
+  padding: 15px 30px;
+  border: transparent;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+.btnstyle i {
+  font-size: 14px;
+}
+
+.carousel .btnstyle {
+  background-color: #ffffff;
+  color: #060606;
+}
+
+.carousel-text .btn:hover {
+  background-color: #ff6e65;
+  color: #ffffff;
+}
+
+/* carouselbox */
+.box-content {
+  padding: 45px;
+  position: relative;
+  margin-top: -4rem;
+  z-index: 4;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.box-content i {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.box-content h4 a {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+.box-content h4 a:hover {
+  color: #000;
+}
+
+#box1 {
+  background-color: #037ef3;
+}
+
+#box2 {
+  background-color: #ffc949;
+}
+
+#box3 {
+  background-color: #ff4f81;
+}
+
+#box4 {
+  background-color: #1ee697;
+}
+
+/* title */
+.title {
+  position: relative;
+}
+.title::after,
+.title::before {
+  content: "";
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  margin: 0 auto;
+  right: 0;
+  background-color: #707070;
+}
+
+.title::after {
+  left: 20px;
+  bottom: -12px;
+}
+.title::before {
+  left: -20px;
+  bottom: -5px;
+}
+
+.title p,
+.title span {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.title span {
+  color: #ff6e65;
+}
+
+/* Course */
+.course {
+  background-color: #f8f9ff;
+  padding: 100px 0px;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0px 15px 30px rgb(29 23 77 / 8%);
+}
+
+.card-top img {
+  width: 100%;
+}
+
+.card-img-text {
+  top: 15px;
+  left: 30px;
+}
+
+.card-img-text a {
+  font-size: 12px;
+  color: white;
+  border-radius: 4px;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 4px 10px;
+}
+
+.card-img-text a:first-child {
+  background-color: #ffa100;
+}
+
+.card-img-text a:nth-child(2) {
+  background-color: #1dc295;
+}
+
+.card-img-text a:nth-child(3) {
+  background-color: #037ef3;
+}
+
+.course-price {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  background-color: #ff6e65;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 8px 20px rgb(241 77 93 / 20%);
+  font-weight: 700;
+  bottom: -15px;
+  right: 25px;
+}
+.course-price p {
+  font-size: 20px;
+}
+
+.card-icon li {
+  color: #060606;
+  font-size: 15px;
+}
+
+.card-icon li i {
+  color: #ff6e65;
+  font-size: 13px;
+}
+
+.card-body h4 a {
+  color: #060606;
+  font-size: 21px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+.card-body h4 a:hover {
+  color: #ff6e65;
+}
+
+.card-body .card-text {
+  color: #707070;
+}
+
+.card-body .card-bottom ul {
+  color: #ffc949;
+}
+
+.card-body .card-bottom ul li {
+  margin-right: 3px;
+}
+
+.card-body .card-bottom ul li i {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.cardbtn {
+  color: #ff6e65;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cardbtn:hover {
+  color: #0d369f;
+}
+
+.cardbtn i {
+  font-size: 14px;
+}
+
+.card-bottom {
+  border-top: 1px solid #eee;
+}
+
+.capstonebtn {
+  color: #ffffff;
+  background-color: #ff6e65;
+}
+
+.capstonebtn:hover {
+  background-color: #0d369f;
+  color: #ffffff;
+}
+
+/********************* RESPONSIVE **************************/
+/* Header */
+
+/* Carousel */
+@media screen and (max-width: 1199.98px) {
+  .box-content h4 a {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .carousel .carousel-text h1 {
+    font-size: 4rem;
+  }
+  .box-content h4 a {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .carousel .carousel-text h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .carousel .carousel-text h1 {
+    font-size: 2.5rem;
+  }
+  .box-content h4 a {
+    font-size: 20px;
+  }
+}
+/* Welcome */
+
+/* Course */
+
+/* Icon */
+
+/* Number */
+
+/* Feedback */
+
+/* Instructors */
+
+/* Contact */
+
+/* Subscribe */
+
+/* Footer */
