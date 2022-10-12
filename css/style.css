@@ -13,6 +13,11 @@ a:hover {
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* header */
 .top-header {
   background-color: #0d369f;
@@ -31,6 +36,15 @@ a:hover {
 .top-header .top-header-list2 li,
 .top-header .top-header-list2 a {
   color: white;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999;
+  background-color: white;
 }
 
 .navbarStudios a {
