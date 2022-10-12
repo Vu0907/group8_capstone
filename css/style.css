@@ -51,7 +51,7 @@ ul {
   color: #0d369f;
 }
 
-.navbarStudios:hover a {
+.navbarStudios .navbar-brand:hover p {
   color: #ff6e65;
   transition: all 0.5s;
 }
@@ -72,8 +72,8 @@ ul {
   margin: 0 15px;
 }
 
-#navbarNavStudiosDropdown .nav-item:hover .nav-link,
-#navbarNavStudiosDropdown .dropdown-item:hover,
+#navbarNavStudiosDropdown .nav-item:hover a.nav-link,
+.dropdown-menu a.dropdown-item:hover,
 .top-header-list2 a:hover,
 .top-header-list a:hover {
   color: #ff6e65;
@@ -104,6 +104,47 @@ ul {
   color: #0d369f;
   right: 0;
   padding: 8px 12px 8px 2px;
+}
+
+/* Feature */
+
+.feature-images i{
+  color: #0d369f;
+  font-size: 30px;
+  background:rgb(13 54 159 / 9%);
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+}
+
+.feature-title{
+  color: black;
+    line-height: 34px;
+    font-weight: 600;
+}
+
+.feature-text p{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 28px;
+  color: #707070;
+  letter-spacing: 0.4px;
+}
+
+.feature-info a:hover h3.feature-title{
+  color: #ff6e65;
+  transition: all 0.5s;
+}
+
+.feature-info p.feature-text{
+     margin: 0;
+    padding: 0;
+    font-size: 20px ;
+    line-height: 28px;
+    color: #707070;
+    letter-spacing: .4px;
 }
 
 .cont-ser-position .theme-switch-wrapper {
