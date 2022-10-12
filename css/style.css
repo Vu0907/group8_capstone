@@ -248,7 +248,6 @@ ul {
   color: #ffffff;
 }
 
-/* carouselbox */
 .box-content {
   padding: 45px;
   position: relative;
@@ -326,33 +325,35 @@ ul {
   color: #ff6e65;
 }
 
+/* Welcome */
+
 /* Course */
 .course {
   background-color: #f8f9ff;
   padding: 100px 0px;
 }
 
-.card {
+.course .card {
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid #eee;
   transition: all 0.5s;
 }
 
-.card:hover {
+.course .card:hover {
   box-shadow: 0px 15px 30px rgb(29 23 77 / 8%);
 }
 
-.card-top img {
+.course .card-top img {
   width: 100%;
 }
 
-.card-img-text {
+.course .card-img-text {
   top: 15px;
   left: 30px;
 }
 
-.card-img-text a {
+.course .card-img-text a {
   font-size: 12px;
   color: white;
   border-radius: 4px;
@@ -362,15 +363,15 @@ ul {
   padding: 4px 10px;
 }
 
-.card-img-text a:first-child {
+.course .card-img-text a:first-child {
   background-color: #ffa100;
 }
 
-.card-img-text a:nth-child(2) {
+.course .card-img-text a:nth-child(2) {
   background-color: #1dc295;
 }
 
-.card-img-text a:nth-child(3) {
+.course .card-img-text a:nth-child(3) {
   background-color: #037ef3;
 }
 
@@ -391,61 +392,63 @@ ul {
   font-size: 20px;
 }
 
-.card-icon li {
+.course .card-icon li {
   color: #060606;
   font-size: 15px;
 }
 
-.card-icon li i {
+.course .card-icon li i {
   color: #ff6e65;
   font-size: 13px;
 }
 
-.card-body h4 a {
+.course .card-body h4 a {
   color: #060606;
   font-size: 21px;
   font-weight: 600;
   transition: all 0.5s;
 }
 
-.card-body h4 a:hover {
+.course .card-body h4 a:hover {
   color: #ff6e65;
 }
 
-.card-body .card-text {
+.course .card-body .card-text {
   color: #707070;
 }
 
-.card-body .card-bottom ul {
+.course .card-body .card-bottom ul {
   color: #ffc949;
 }
 
-.card-body .card-bottom ul li {
+.course .card-body .card-bottom ul li {
   margin-right: 3px;
 }
 
-.card-body .card-bottom ul li i {
+.course .card-body .card-bottom ul li i {
   font-size: 13px;
   cursor: pointer;
 }
 
-.cardbtn {
+.course .cardbtn {
   color: #ff6e65;
   font-size: 14px;
   font-weight: 600;
 }
 
-.cardbtn:hover {
+.course .cardbtn:hover {
   color: #0d369f;
 }
 
-.cardbtn i {
+.course .cardbtn i {
   font-size: 14px;
 }
 
-.card-bottom {
+.course .card-bottom {
   border-top: 1px solid #eee;
 }
+
+/* capstone button */
 
 .capstonebtn {
   color: #ffffff;
@@ -456,6 +459,70 @@ ul {
   background-color: #0d369f;
   color: #ffffff;
 }
+
+/* Icon */
+
+/* Numbers */
+.number {
+  padding: 100px 0px;
+}
+
+.number .container > p {
+  color: #707070;
+}
+.number-content {
+  margin-top: 70px;
+}
+
+.number-content h2 span {
+  font-size: 45px;
+}
+
+/* Feedback */
+
+/* Instructor */
+.instructor {
+  padding: 100px 0px;
+}
+
+.instructor-content {
+  padding-top: 55px;
+}
+
+.instructor .card {
+  background-color: #fff;
+  box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.instructor .card-top img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.instructor .card-title {
+  color: #060606;
+  font-weight: 600;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.instructor .card-text {
+  color: #707070;
+  font-size: 13px;
+}
+
+.instructor .card:hover .card-title {
+  color: #ff6e65;
+}
+
+/* Contact */
+
+/* Subscribe */
+
+/* Footer */
 
 /********************* RESPONSIVE **************************/
 /* Header */
@@ -494,6 +561,25 @@ ul {
 /* Icon */
 
 /* Number */
+@media screen and (min-width: 991.98px) {
+  .number-content .number1,
+  .number-content .number2,
+  .number-content .number3 {
+    border-right: 1px solid #eee;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .number-content h2 span {
+    font-size: 35px;
+  }
+
+}
+@media screen and (max-width: 575.98px) {
+  .number-content p {
+    font-size: 14px;
+  }
+}
 
 /* Feedback */
 
