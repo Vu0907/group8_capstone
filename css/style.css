@@ -232,11 +232,9 @@ li {
 .owl-item:before {
   content: "";
   position: absolute;
-  background: linear-gradient(
-    75deg,
-    rgb(16 16 16 / 34%) 10%,
-    rgb(230 2 100 / 0%)
-  );
+  background: linear-gradient(75deg,
+      rgb(16 16 16 / 34%) 10%,
+      rgb(230 2 100 / 0%));
   top: 0;
   left: 0;
   right: 0;
@@ -347,6 +345,7 @@ li {
 .title {
   position: relative;
 }
+
 .title::after,
 .title::before {
   content: "";
@@ -362,6 +361,7 @@ li {
   left: 20px;
   bottom: -12px;
 }
+
 .title::before {
   left: -20px;
   bottom: -5px;
@@ -440,6 +440,7 @@ li {
   bottom: -15px;
   right: 25px;
 }
+
 .course-price p {
   font-size: 20px;
 }
@@ -514,14 +515,51 @@ li {
 
 /* Icon */
 
+.icon {
+  background-image: url(../img/bg3.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.icon .item_content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.icon .item_img {
+  margin-right: 1em;
+}
+
+.icon .icon_services_right_grid_item {
+  font-size: 20px;
+  line-height: 30px;
+  color: #060606;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.icon .item_img i {
+  background: #0d369f;
+  color: #0d369f;
+  font-size: 28px;
+  background: rgb(13 54 159 / 9%);
+  width: 65px;
+  height: 66px;
+  line-height: 65px;
+  border-radius: 50%;
+  text-align: center;
+}
+
 /* Numbers */
 .number {
   padding: 100px 0px;
 }
 
-.number .container > p {
+.number .container>p {
   color: #707070;
 }
+
 .number-content {
   margin-top: 70px;
 }
@@ -531,6 +569,51 @@ li {
 }
 
 /* Feedback */
+
+.feedback .feedback_grid {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
+  padding: 2rem;
+}
+
+.feedback_text q::before {
+  font-size: 50px;
+  color: #ff6e65;
+  font-family: initial;
+  line-height: .8;
+  padding-top: 8px;
+  display: inline-block;
+}
+
+q::before {
+  content: open-quote;
+}
+
+q::after {
+  content: close-quote;
+}
+
+.feedback .feedback_content {
+  display: grid;
+  grid-template-columns: .3fr 1fr;
+  align-items: center;
+  grid-gap: 5px;
+  margin-top: 1.5em;
+}
+
+.feedback .feedback_img img {
+  border-radius: 50%;
+}
+
+.feedback .feedback_name h5{
+  font-weight: 600;
+  line-height: 16px;
+}
+.feedback .feedback_name h5{
+  font-size: 13px;
+  color: #707070;
+}
 
 /* Instructor */
 .instructor {
@@ -594,11 +677,49 @@ li {
   color: #0d369f;
   transition: all 0.5s;
 }
+
 .card-social a i:hover {
   opacity: 0.8;
 }
 
 /* Contact */
+
+.img-responsive{
+  max-width: 100%;
+  display: block;
+
+}
+
+.contact-sec-left img{
+  border-radius: 8px;
+}
+
+h3.title-style{
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+.btn_contact{
+  padding: 14px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  border-radius: 4px;
+  background-color: #ff6e65;
+  border: none;
+  text-decoration: none;
+}
+
+
+a.btn_contact{
+  color: white;
+  text-decoration: none;
+}
+
+.btn_contact:hover{
+  background-color: #0d369f;
+}
 
 /* Subscribe */
 .subscribe {
@@ -613,6 +734,7 @@ li {
   box-shadow: 0px -1px 41px 0px rgb(21 22 23 / 8%);
   border-radius: 10px;
 }
+
 .subscribe h2 {
   color: #060606;
   font-size: 38px;
@@ -754,6 +876,7 @@ footer {
   padding: 20px 0px;
   margin: 0;
 }
+
 .copyright p {
   color: #a0a0a0;
   margin: 0;
@@ -768,27 +891,33 @@ footer {
     font-size: 19px;
   }
 }
+
 @media screen and (max-width: 991.98px) {
   .carousel .carousel-text h1 {
     font-size: 4rem;
   }
+
   .box-content h4 a {
     font-size: 24px;
   }
 }
+
 @media screen and (max-width: 767.98px) {
   .carousel .carousel-text h1 {
     font-size: 3rem;
   }
 }
+
 @media screen and (max-width: 575.98px) {
   .carousel .carousel-text h1 {
     font-size: 2.5rem;
   }
+
   .box-content h4 a {
     font-size: 20px;
   }
 }
+
 /* Welcome */
 
 /* Course */
@@ -797,6 +926,7 @@ footer {
 
 /* Number */
 @media screen and (min-width: 991.98px) {
+
   .number-content .number1,
   .number-content .number2,
   .number-content .number3 {
@@ -809,6 +939,7 @@ footer {
     font-size: 35px;
   }
 }
+
 @media screen and (max-width: 575.98px) {
   .number-content p {
     font-size: 14px;
