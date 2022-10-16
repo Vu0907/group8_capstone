@@ -58,6 +58,11 @@ li {
   background-color: white;
 }
 
+.navbar-brand p {
+  font-size: 25px !important;
+  font-weight: 500;
+}
+
 .navbarStudios a {
   color: #0d369f;
 }
@@ -232,9 +237,11 @@ li {
 .owl-item:before {
   content: "";
   position: absolute;
-  background: linear-gradient(75deg,
-      rgb(16 16 16 / 34%) 10%,
-      rgb(230 2 100 / 0%));
+  background: linear-gradient(
+    75deg,
+    rgb(16 16 16 / 34%) 10%,
+    rgb(230 2 100 / 0%)
+  );
   top: 0;
   left: 0;
   right: 0;
@@ -556,7 +563,7 @@ li {
   padding: 100px 0px;
 }
 
-.number .container>p {
+.number .container > p {
   color: #707070;
 }
 
@@ -581,7 +588,7 @@ li {
   font-size: 50px;
   color: #ff6e65;
   font-family: initial;
-  line-height: .8;
+  line-height: 0.8;
   padding-top: 8px;
   display: inline-block;
 }
@@ -596,7 +603,7 @@ q::after {
 
 .feedback .feedback_content {
   display: grid;
-  grid-template-columns: .3fr 1fr;
+  grid-template-columns: 0.3fr 1fr;
   align-items: center;
   grid-gap: 5px;
   margin-top: 1.5em;
@@ -606,11 +613,11 @@ q::after {
   border-radius: 50%;
 }
 
-.feedback .feedback_name h5{
+.feedback .feedback_name h5 {
   font-weight: 600;
   line-height: 16px;
 }
-.feedback .feedback_name h5{
+.feedback .feedback_name h5 {
   font-size: 13px;
   color: #707070;
 }
@@ -684,23 +691,22 @@ q::after {
 
 /* Contact */
 
-.img-responsive{
+.img-responsive {
   max-width: 100%;
   display: block;
-
 }
 
-.contact-sec-left img{
+.contact-sec-left img {
   border-radius: 8px;
 }
 
-h3.title-style{
+h3.title-style {
   font-size: 35px;
   font-weight: 600;
   line-height: 45px;
 }
 
-.btn_contact{
+.btn_contact {
   padding: 14px 30px;
   font-weight: 600;
   font-size: 16px;
@@ -711,13 +717,13 @@ h3.title-style{
   text-decoration: none;
 }
 
-
-a.btn_contact{
+a.btn_contact {
   color: white;
   text-decoration: none;
+  transition: all 0.5s;
 }
 
-.btn_contact:hover{
+.btn_contact:hover {
   background-color: #0d369f;
 }
 
@@ -926,7 +932,6 @@ footer {
 
 /* Number */
 @media screen and (min-width: 991.98px) {
-
   .number-content .number1,
   .number-content .number2,
   .number-content .number3 {
