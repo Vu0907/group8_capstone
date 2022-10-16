@@ -64,7 +64,12 @@ li {
 }
 
 .navbarStudios a {
-  color: #0d369f;
+  color: #5b5b5b;
+}
+
+.navbarStudios a.active{
+  color: #ff6e65;
+
 }
 
 .navbarStudios .navbar-brand:hover p {
@@ -85,7 +90,7 @@ li {
 }
 
 #navbarNavStudiosDropdown .nav-item {
-  margin: 0 15px;
+  margin: 0 5px;
 }
 
 #navbarNavStudiosDropdown .nav-item:hover a.nav-link,
@@ -879,6 +884,33 @@ footer {
 
 /********************* RESPONSIVE **************************/
 /* Header */
+@media screen and (max-width: 1199.98px) {
+  #navbarNavStudiosDropdown .nav-link,
+  #navbarNavStudiosDropdown .dropdown-item{
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 991.98px) {
+  .navbar-toggler{
+    margin-left: auto;
+  }
+  #navbarNavStudiosDropdown .nav-link,
+  #navbarNavStudiosDropdown .dropdown-item{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .top-header{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+
+}
 
 /* Carousel */
 @media screen and (max-width: 1199.98px) {
@@ -972,6 +1004,10 @@ footer {
 .fa-moon {
   transform: rotate(-25deg);
   display: block;
+}
+
+.dark .fa-bars{
+  color: white;
 }
 
 .dark .fa-sun {
