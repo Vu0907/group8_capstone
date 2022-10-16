@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body>
+  <body id="myBody">
     <!-- Header -->
     <section class="top-header">
       <div class="container-fluid">
@@ -153,16 +153,11 @@
           </div>
         </ul>
       </div>
-      <div class="cont-ser-position">
+      <div class="changetheme">
         <nav class="navigation">
-          <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-              <input type="checkbox" id="checkbox" />
-              <div class="mode-container">
-                <i class="fa-solid fa-sun"></i>
-                <i class="fa-solid fa-moon"></i>
-              </div>
-            </label>
+          <div id="switchButton" class="theme-switch">
+            <i class="fa-regular fa-sun"></i>
+            <i class="fa-regular fa-moon"></i>
           </div>
         </nav>
       </div>
@@ -965,7 +960,7 @@
               tortor.Uspendisse efficitur orci urna. In et augue ornare, tempor
               massa in, luctus sapien.
             </p>
-            <div class="mt-4">
+            <div class="mt-5">
               <a class="btn_contact mt-3" href="contact.html">Contact Us</a>
             </div>
           </div>
@@ -1113,6 +1108,14 @@
       </div>
     </footer>
 
+    <!-- backtotop -->
+    <a
+      href="#"
+      class="backtotop cd-top text-replace js-cd-top .cd-top--is-visible"
+    >
+      <i class="fa-solid fa-turn-up"></i>
+    </a>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- jquery -->
@@ -1167,5 +1170,11 @@
         time: 4000,
       });
     </script>
+
+    <!-- backtotopjs -->
+    <script src="./libs/backtotop/util.js"></script>
+    <script src="./libs/backtotop/main.js"></script>
+
+    <script src="./main.js"></script>
   </body>
 </html>
