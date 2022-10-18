@@ -67,9 +67,8 @@ li {
   color: #5b5b5b;
 }
 
-.navbarStudios a.active{
+.navbarStudios a.active {
   color: #ff6e65;
-
 }
 
 .navbarStudios .navbar-brand:hover p {
@@ -752,7 +751,7 @@ footer {
 }
 
 .footer-content {
-  padding: 100px 0px;
+  padding: 100px 0px 80px;
 }
 
 .footer-link {
@@ -761,7 +760,7 @@ footer {
 
 .footer-link .row h4 {
   color: #fff;
-  font-size: 17px;
+  font-size: 16px;
   margin-bottom: 20px;
   font-weight: 700;
   padding-bottom: 10px;
@@ -849,6 +848,7 @@ footer {
 .copyright p {
   color: #a0a0a0;
   margin: 0;
+  font-size: 15px;
 }
 
 /* backtotop */
@@ -886,30 +886,28 @@ footer {
 /* Header */
 @media screen and (max-width: 1199.98px) {
   #navbarNavStudiosDropdown .nav-link,
-  #navbarNavStudiosDropdown .dropdown-item{
+  #navbarNavStudiosDropdown .dropdown-item {
     font-size: 16px;
   }
 }
 
-
 @media screen and (max-width: 991.98px) {
-  .navbar-toggler{
+  .navbar-toggler {
     margin-left: auto;
   }
   #navbarNavStudiosDropdown .nav-link,
-  #navbarNavStudiosDropdown .dropdown-item{
+  #navbarNavStudiosDropdown .dropdown-item {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 767.98px) {
-  .top-header{
+  .top-header {
     display: none;
   }
 }
 
 @media screen and (max-width: 575.98px) {
-
 }
 
 /* Carousel */
@@ -945,12 +943,6 @@ footer {
   }
 }
 
-/* Welcome */
-
-/* Course */
-
-/* Icon */
-
 /* Number */
 @media screen and (min-width: 991.98px) {
   .number-content .number1,
@@ -972,15 +964,85 @@ footer {
   }
 }
 
-/* Feedback */
-
-/* Instructors */
-
-/* Contact */
-
-/* Subscribe */
-
 /* Footer */
+@media screen and (min-width: 991.98px) {
+  .col4 {
+    border-left: 1px solid rgb(64 73 82 / 51%);
+  }
+
+  .col2,
+  .col4 {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 991.9px) {
+  .footer-link .row h4 {
+    margin-bottom: 20px;
+  }
+  .col1 ul li,
+  .col2 ul li {
+    margin-bottom: 10px;
+  }
+  .col3 ul li {
+    margin-bottom: 15px;
+  }
+
+  .col3,
+  .col4 {
+    margin-top: 40px;
+  }
+  .subscribe {
+    margin: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .subscribe form {
+    margin-top: 20px;
+  }
+
+  .subscribe {
+    top: -160px;
+  }
+  .footer-link .row h4 {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .subscribe h2 {
+    font-size: 30px;
+  }
+
+  .col2,
+  .col3,
+  .col4 {
+    margin-top: 20px;
+  }
+
+  .footer-content {
+    padding: 90px 0px 60px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .subscribe {
+    padding: 30px 20px;
+  }
+  .subscribe form {
+    flex-wrap: wrap;
+  }
+  .subscribe form button {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+
+  .footer-content {
+    padding: 120px 0px 60px;
+  }
+}
 
 /********************* DARK THEME **************************/
 .changetheme {
@@ -1006,7 +1068,7 @@ footer {
   display: block;
 }
 
-.dark .fa-bars{
+.dark .fa-bars {
   color: white;
 }
 
